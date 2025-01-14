@@ -1,0 +1,52 @@
+Coputer network program includes 5 main chapters:
+   
+    1. Introduction: 
+        - What is Internet? 
+        - The Network Edge; 
+        - The Network Core; 
+        - Delay, Loss, Throughput, and other metrics in Packet-Switched Networks; 
+        - Protocol Layers and Their Service Models; Transmission Modes; 
+        - Line Configuration; 
+        - Unicast, Broadcast, Multicast; 
+        - Topology; 
+        - Types of Area Network.
+
+
+    2. Application Layer:
+        - Principles of Network Applications; 
+        - The Web and HTTP; 
+        - HTTP Python Programming; 
+        - Electronic Mail in the Internet; 
+        - SMTP Python Programming; 
+        - DNS; 
+        - Peer-to-Peer File Distribution; 
+        - Video Streaming and Content Distribution Networks; 
+        - FTP Python Programming.
+
+
+    3. Transport Layer:
+        - Transport-Layer overview; 
+        - Multiplexing and Demultiplexing; 
+        - User Datagram Protocol; 
+        - UDP Python Programming; 
+        - Principles of Reliable Data Transfer; 
+        - Transmission Control Protocol; 
+        - TCP Python Programming;
+        - Principles of Congestion Control; 
+        - TCP Congestion Control; 
+        - Peer-to-Peer Python Programming;
+
+
+    4. Network Layer:
+        - Network-Layer overview; 
+        - What’s Inside a Router? 
+        - Internet Protocol; 
+        - Generalized Forwarding and Software Defined Network; 
+        - Routing Algorithms: the Link-State (LS) Routing Algorithm and the Distance-Vector (DV)
+        - Routing Algorithm; 
+        - Intra-AS Routing in the Internet; 
+        - Routing Among the ISPs; The SDN Control Plane; 
+        - Internet Control Message Protocol; 
+        - Network Management and SNMP, 
+        - NETCONF/YANG; 
+        - Subnet
