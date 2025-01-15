@@ -1,0 +1,66 @@
+WHAT IS INTERNET?
+    The internet, sometimes simply called the net, 
+    is a worldwide system of interconnected computer networks and electronic devices that 
+    communicate with each other using an established set of protocols. 
+    The internet was conceived by the Advanced Research Projects Agency (ARPA) of the U.S. government in 1969.
+    It connects millions of computers, webpages, websites, and servers.
+
+
+HISTORY OF THE INTERNET
+    The Internet came in the year 1960 with the creation of the 
+    first working model called ARPANET (Advanced Research Projects Agency).    
+    It allowed multiple computers to work on a single network which was their biggest achievement at that time.
+    In october 1969, using ARPANET first message was transferred from one computer to another.
+    After that technology continues to grow. 
+
+How Does the Internet Work?
+    Many people think that the Internet does not require any physical cables to work,
+    but that's not true.
+    The internet is set up with the help of physical optical fiber data transmission cables 
+    or copper wires and various other networking mediums like LAN, WAN, MAN, etc.
+    It does not matter 2G or 4G, for accessing the Internet require these physical cable setups to access the Internet.
+
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+
+Network edge:
+    ▪ hosts: clients and servers
+    ▪ servers often in data centers
+Access networks, physical media:
+    ▪ wired, wireless communication links
+Network core:
+    ▪ interconnected routers
+    ▪ network of networks
+
+
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+
+What is Packet-Switching?
+    Packet switching is a method of transmitting data over a network by breaking 
+    it into smaller packets and sending them separately. 
+    The packets are then reassembled at their destination
+
+What is Packet transmission delay?
+    Packet transmission delay is the time it takes to send a packet of data over a network link. 
+    It's also known as packetization delay.
+
+    Factors that affect packet transmission delay
+        ▪ Packet size: The larger the packet, the longer the transmission delay 
+        ▪ Link speed: The faster the link, the shorter the transmission delay 
+        ▪ Number of active sessions: The physical layer processes packets in FIFO order
+        ▪ You can calculate packet transmition delay using the formula: Packet Size / Link Speed
+
+
+What is store-and-forward?
+    ▪ store-and-forward is a telecommunications technique that stores and verifies data packets 
+    before sending them to the next node. This process ensures that data packets are error-free 
+    and can be delivered to the correct destination
+
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
