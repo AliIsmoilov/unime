@@ -4,6 +4,8 @@ WHAT IS INTERNET?
     communicate with each other using an established set of protocols. 
     The internet was conceived by the Advanced Research Projects Agency (ARPA) of the U.S. government in 1969.
     It connects millions of computers, webpages, websites, and servers.
+    Internet structure: a “network of networks”
+    hosts connect to Internet via access Internet Service Providers (ISPs)
 
 
 HISTORY OF THE INTERNET
@@ -64,3 +66,29 @@ What is store-and-forward?
 
 -----------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------
+
+
+What is Circuit Switching?
+    ▪ Circuit switching is method for establishing a connection between two endpoints
+    for the duration of communication sessions.
+    ▪ Mostly used for voices and telephone networks
+    ▪ Frequency division multiplexing (FDM) and time division multiplexing (TDM) are
+    2 types of Circuit Switching which uses different methods to share a channel.
+ 
+
+Frequency Division Multiplexing (FDM):
+    ▪ optical, electromagnetic frequencies divided into (narrow) frequency bands
+    ▪ each call allocated its own band, can transmit at max rate of that narrow band
+    ▪ each station assigns fixed frequency band 
+
+Time Division Multiplexing (TDM):
+    ▪ time divided into slots
+    ▪ time divided into equal size slots 
+
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+How do packet delay and loss occur?
+    ▪ packet loss occurs when memory to hold queued packets fills up
+    ▪ arriving packets dropped(loss) if no free buffers
