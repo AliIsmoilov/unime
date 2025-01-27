@@ -1,0 +1,56 @@
+                                    Data Modification in SQL
+
+Statements for modification in SQL:
+    Adding, Insertion = INSERT
+        INSERT INTO users (id, name, age) VALUES (1, 'John', 20);
+    Removing, Deletion = DELETE
+        DELETE FROM users WHERE id = 1;
+    Change, Set = UPDATE
+        UPDATE users set age = 25 where id = 1;
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                GRANT and REVOKE
+
+
+Grant: 
+    SQL Grant command is specifically used to provide privileges 
+    to database objects for a user. 
+    This command also allows users to grant permissions to other users too. 
+
+Syntax: 
+    grant privilege_name on object_name
+    to {user_name | public | role_name} 
+
+
+Revoke : 
+    Revoke command withdraw user privileges on database objects if any granted. 
+    It does operations opposite to the Grant command. 
+    When a privilege is revoked from a particular user U, 
+    then the privileges granted to all other users by user U will be revoked. 
+
+Syntax: 
+    revoke privilege_name on object_name
+    from {user_name | public | role_name}
+
+
+
+EXAMPLE:  
+    
+    grant insert, 
+    select on accounts to Ram
+
+By the above command user ram has granted permissions 
+on accounts database object like he can query or insert into accounts. 
+
+    revoke insert, 
+    select on accounts from Ram
+
+By the above command user ram’s permissions like query or insert 
+on accounts database object has been removed.
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
