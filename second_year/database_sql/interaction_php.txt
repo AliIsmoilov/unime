@@ -1,0 +1,34 @@
+code syntax
+Instructions must be separated by Instructions must be separated by ;
+Comments
+• // this is a comment this is a comment
+• /* this is a comment this is a comment */
+• # this is a comment this is a comment
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                    PHP and MySQL
+
+how to access a PHP and MySQL:
+
+ What you need is the following information:
+• name of the host on which MySQL is running;
+• name of our database;
+• our username;
+• relative password, provided by the system administrator.
+
+
+• To establish the connection with the MySQL server, use the  mysqli_connect() function.
+
+ After connecting to MySQL, you need to choose the database to work with; 
+    this can be done with the mysqli_select_db() function. 
+
+
+Sessions:
+    • If, at the end of a script, you want to destroy all the data
+    just use the relating to the session set at the beginning session_destroy() function,
+
+    • If, you simply want to delete a specific session, the function to use is
+    session_unregister()
