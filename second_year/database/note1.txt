@@ -1,0 +1,73 @@
+                            DOMAINS == TYPES
+
+In slides it's called DOMAINS, but it's easy to understatd if we say TYPE
+
+
+Domains(types) specify the content of attributes, 
+
+Two categories:
+    • Elementary (predefined by the standard)
+    • User-defined
+
+Elementary domains:
+    • Character(char, varchar) - used for texts and strings
+        examples: "a", "hello", "Chiao", "salom"...
+    
+    • BOOLEAN(TRUE, FALSE)
+    
+    • Numeric types:
+        INTEGER = 42
+        DECIMAL = 9876.5432
+        float = 3.14
+        double precision = 3.141592653589793
+    • Date and Time Data Types:
+        DATE - 2023-10-05
+        TIME - 14:30:00
+        TIMESTAMP - 2023-10-05 14:30:00
+    
+
+
+                                    TABLE
+
+Example of create table
+
+        CREATE TABLE user (
+            id SERIAL PRIMARY KEY,
+            name VARCHAR,
+            suraname VARCHAR,
+            phone_number VARCHAR,
+        )
+
+
+                        Intra-relational constraints
+
+    – not null
+    – unique
+    – primary key
+    - default 
+
+                            
+                            where && having
+
+
+- In SQL, the WHERE and HAVING clauses are essential 
+for filtering data and refining query results.
+
+- While both serve the purpose of applying conditions, 
+they are used at different stages of query execution and for distinct purposes.
+
+
+----------------------------------------------------------------------------------------------------|
+                                                |                                                   |
+                WHERE                           |                HAVING                             |
+                                                |                                                   |
+    -Filters rows before groups are aggregated  |   - Filters groups after the aggregation          | 
+                                                |                                                   |                
+    - WHERE can be used without GROUP BY        |   - HAVING can be used with GROUP BY              |   
+                                                |                                                   |                        
+    - WHERE cannot contain aggregate function   |   - HAVING can contain aggregate function         |
+                                                |                                                   |              
+    - WHERE can be used with SELECT, UPDATE     |   - HAVING can only be used with SELECT           |
+      DELETE                                    |                                                   |
+                                                |                                                   |
+----------------------------------------------------------------------------------------------------|
