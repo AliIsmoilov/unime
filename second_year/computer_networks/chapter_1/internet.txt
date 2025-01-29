@@ -92,3 +92,65 @@ Time Division Multiplexing (TDM):
 How do packet delay and loss occur?
     ▪ packet loss occurs when memory to hold queued packets fills up
     ▪ arriving packets dropped(loss) if no free buffers
+
+
+
+                                                SECURITY
+
+Lines of defense:
+    ▪ authentication: proving you are the person who you say you are
+    ▪ confidentiality: via encryption
+    ▪ integrity checks: digital signatures prevent/detect tampering
+    ▪ access restrictions: password-protected VPNs
+    ▪ firewalls: specialized “middleboxes” in access and core networks
+
+
+                                                    
+
+                                    What is the five-layer internet protocol stack?
+
+There are five layers in the internet protocol stack, as shown in the below:
+    ▪ Application Layer
+    ▪ Transport Layer
+    ▪ Network Layer
+    ▪ Link Layer
+    ▪ Physical Layer
+
+Application Layer:
+    Application layer is responsible for communicating between 
+    server and different applications like browsers, email, etc
+    
+    Prodtocols used in application layer:
+        ▪ Hypertext Transfer Protocol (HTTP): for transferring HTML web documents
+        ▪ File Transfer Protocol (FTP): fro transferring files
+        ▪ Simple Mail Transfer Protocol (SMTP): for transferring e-mail messages
+        ▪ Domain Name Systems (DNS): for translation human-friendly domain names into IP addresses
+
+Transport Layer:
+    Transport layer is responsible for collecting all relevant informations
+    and transport this messages to relevant end-point and transferring it
+    to the network layer
+
+    The two important protocols used in the transport layer:
+        ▪ Transmission Control Protocol (TCP): for reliable and connection-oriented data transfer
+        ▪ User Datagram Protocol (UDP): for fast, unreliable, and connection-less data transfer
+
+    Connection-oriented means that TCP establishes the connection  first and then
+    transmits data. UDP is connection-less, which means that it just sends the data
+    without checking if it is being received or not.
+
+
+Network layer:
+    This layer uses IP(Internet Protocol) predominantly to find the correct network 
+    where the destination node is present through Routers which connects .
+    
+    Another protocol used at this layer for error-reporting is the Internet Control Message Protocol(ICMP). 
+
+Link layer:
+    data transfer between neighboring network elements
+
+
+Physical layer:
+    The physical layer is responsible for breaking the data frame into bits, 
+    converting it into a form that can be transmitted over the physical communication line, and transferring it.
+
