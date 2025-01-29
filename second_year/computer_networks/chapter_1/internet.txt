@@ -154,3 +154,105 @@ Physical layer:
     The physical layer is responsible for breaking the data frame into bits, 
     converting it into a form that can be transmitted over the physical communication line, and transferring it.
 
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+
+                                            Transmission Modes
+
+▪ Transmission mode(aka communication mode) means transferring data between two devices
+▪ There are three types of transmission mode:
+    • Simplex Mode
+    • Half-Duplex Mode
+    • Full-Duplex Mode
+
+
+
+Simplex Mode:
+    ▪ communication is unidirectional, as on a one-way street.
+    ▪ Only one of the two devices on a link can transmit, the other can only receive.
+    ▪ The simplex mode can use the entire capacity of the channel to send data in one direction.
+    ▪ Example: Keyboard and traditional monitors. 
+    The keyboard can only introduce input, the monitor can only give the output.
+
+Half-Duplex Mode:
+  ▪ Each station can both transmit and receive, but not at the same time.
+    When one device is sending, the other can only receive, and vice versa.
+    ▪ It is used in cases where there is no need for communication in both
+    directions at the same time. 
+    ▪ Example: Walkie-talkie in which message is sent one at a time and
+    messages are sent in both directions.
+
+Full-Duplex Mode:
+    ▪ Both stations can transmit and receive simultaneously.
+    ▪ Full-duplex mode is used when communication in both directions is required all the time
+    ▪ Example: Telephone Network in which there is communication between two persons by
+    a telephone line, through which both can talk and listen at the same time
+
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+                                Difference between Unicast, Broadcastand Multicast
+
+Unicast:
+    ▪ This type of information transfer is usefull when there is
+    a participation of a single sender and single recipient.
+    ▪ One-to-one transmission.
+    ▪ This is the most common form of data transfer over the networks.
+
+Broadcast:
+    ▪ This is useful when a device in one network wants to transfer packet stream to 
+    all the devices over the other network
+
+Multicast:
+    ▪ one/more senders and one/more recipients participate in data transfer traffic.
+    ▪ IP multicast requires support of some other protocols like 
+    IGMP(Internet Group Management Protocol), Multicast routing for its working.
+
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+                                    Types of area networks 
+
+▪ LAN, MAN, and WAN are the three major types of networks designed to
+operate over the area they cover. There are some similarities and dissimilarities between them.
+    • One of the major differences is the geographical area they cover, i.e. LAN covers the
+    smallest area; MAN covers an area larger than LAN and WAN comprises the largest of all. 
+
+▪ There are other types of Computer Networks also, like:
+    • PAN (Personal Area Network)
+    • SAN (Storage Area Network)
+    • EPN (Enterprise Private Network)
+    • VPN (Virtual Private Network)
+
+
+Local Area Network:
+    ▪ LAN or Local Area Network connects network devices in such a way
+    that personal computers and workstations can share data, tools, and programs. 
+    ▪ The group of computers or devices are connected together by a switch or
+    stack of switches using private addressing scheme as defined by the TCP/IP protocol
+    ▪ Routers are found at the boundary of a LAN, connecting them to the larger WAN.
+    ▪ LANs cover a smaller geographical area(size is limited to a few kilometers) 
+    and are privately owned.
+    ▪ One can use it for an office building, home, hospital, schools, etc. 
+    ▪ A LAN typically relies mostly on wired connections for increased
+    speed and security, but wireless connections can also be part of a LAN.
+
+
+Metropolitan Area Network:
+    ▪ MAN or Metropolitan area Network covers a larger area than that of a
+    LAN and smaller area as compared to WAN.
+    ▪ It connects two or more computers that are apart but reside in the same
+    or different cities.
+    ▪ Speeds of MAN range in terms of Mbps.
+    ▪ It’s hard to design and maintain a Metropolitan Area Network.
+
+Wide Area Network:
+    ▪ WAN or Wide Area Network is a computer network that extends
+    over a large geographical area, although it might be confined within
+    the bounds of a state or country. 
+    ▪ The technology is high speed and relatively expensive.
+    ▪ WAN is difficult to design and maintain. 
