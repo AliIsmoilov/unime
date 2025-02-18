@@ -1,1 +1,13 @@
-                                    Database Module 2      || 18.02.2025
+                                    Database Module 2
+
+Proffesor:  Armando Ruggeri
+Email:      aramando.ruggeri@unime.it
+Date:       18.02.2025
+
+Reference books:
+    - Database Management Systems, Raghu Ramarkrishnan
+    - Database Systems: The complete book
+
+
+
+
