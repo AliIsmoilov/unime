@@ -1,0 +1,34 @@
+                    Concurrency vs Parallelism: Understanding the Key Differences
+
+In Computer Science, terms Concurrency and Parallelism come up when we talk about performance and efficiency.
+While they seem similar, they fundamentally different concepts.
+
+
+What is Concurrency?    
+    Concurrency is when multiple tasks are in the process at the same time, but not simultaneously executing.
+    Concurrency efficiently managing several tasks by switching between them quickly and efficiently.
+    In simpler terms, it gives a illusion of doing several tasks at the same time, but actually
+    it's switching between them. 
+    Even if the system has a single CPU core, it can handle concurrent tasks 
+    by slicing time and sharing it among them (a process known as context switching).
+
+
+Real-world Example of Concurrency
+    Imagine a single chef in a kitchen juggling multiple dishes. 
+    They might work on chopping vegetables for a moment, then switch to boiling pasta,
+    and later move to stirring sauce.
+    The chef frequently switches between tasks but never actually does them all simultaneously.
+
+
+What is Parallelism?
+    Parallelism, on the other hand, refers to actually performing multiple tasks at the same time or parallel. 
+    This is achieved by using multiple processors or cores of the system. Each task is executed simultaneously, 
+    and each one gets its own CPU or thread. Parallelism requires hardware that supports it, 
+    such as multi-core CPUs.
+
+
+Real-world Example of Concurrency
+    In the kitchen example, now, imagine the kitchen has two chefs. 
+    One chef focuses on chopping vegetables while the other handles boiling pasta. 
+    Both tasks are happening at the same time, so they’re being performed in parallel.
+
