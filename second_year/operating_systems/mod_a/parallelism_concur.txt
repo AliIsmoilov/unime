@@ -1,4 +1,4 @@
-                    Concurrency vs Parallelism: Understanding the Key Differences
+                                    Concurrency vs Parallelism
 
 In Computer Science, terms Concurrency and Parallelism come up when we talk about performance and efficiency.
 While they seem similar, they fundamentally different concepts.
@@ -27,7 +27,7 @@ What is Parallelism?
     such as multi-core CPUs.
 
 
-Real-world Example of Concurrency
+Real-world Example of Parallelism
     In the kitchen example, now, imagine the kitchen has two chefs. 
     One chef focuses on chopping vegetables while the other handles boiling pasta. 
     Both tasks are happening at the same time, so they’re being performed in parallel.
