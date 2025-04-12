@@ -8,7 +8,7 @@
 Absolute Path:
     This is the full path from the root directory to the file or folder.
     It always starts with /(the root directory).
-    commds to see your absolute path: 'pwd', 'realpath filename'
+    commands to see your absolute path: 'pwd', 'realpath filename'
 
 Relative Path:
     This is the path relative to your current directory
@@ -23,12 +23,12 @@ Relative Path:
 
 
 • Linux Filesystem is laid out in a hierarchical tree structure.
-• Top level directory is called root. And slash(/) mens root.
+• Top level directory is called root. And slash(/) means root.
 
 
 When you go to the root, and run command 'ls' you can see some other default directories
 like bin, boot, dev, var, sbin and etc.
-Now, let's see for what these directories stands:
+Now, let's see for what these directories stand:
 
         • /bin: Binary files
             - /bin contains commands that may be used by both the system administrator and by users.
@@ -51,7 +51,7 @@ Now, let's see for what these directories stands:
         • /home: User Area
             - /home contains user home directories
             - Area writable by individual users
-            - othes users may be able to read depending their permissions
+            - othes users may be able to read depending on their permissions
 
         • /root     
             - The /root is a home directory for the root user
@@ -73,7 +73,7 @@ Now, let's see for what these directories stands:
     'ls- r'                         - reverse the order
     'pwd'                           - Prints the full path of your current directory. pwd stands for "print working directory".
     'cd directory_name'             - Change direction
-    'mkdir directory_name'          - With this command you can crate new directory
+    'mkdir directory_name'          - To create new directory
     'rmdir directory_name'          - To remove or empty the directory
     'rm file_name'                  - To remove files
     'cat, less, head, tail'         - Various ways to display files in Linux
@@ -82,4 +82,4 @@ Now, let's see for what these directories stands:
     'mv old_filename new_filename'  - Rename a file           
     'grep'                          - To search files in a directory for a specific string
     'diff file1 file2'              - To compare two files for differences
-    'chmod'                         - Change Mode Command, allows chage permissions on files and directories    
+    'chmod'                         - Change Mode Command, allows change permissions on files and directories    
