@@ -1,0 +1,100 @@
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                    Process VS Program
+
+What is a program?
+    • A program is passive entity stored on disk
+    • It's passive: just code sitting on a disc or in memory. Waiting to be run
+    • It's like a recipe or blueprint
+    • One program can be multiple processes
+
+
+What is a process?
+    • Process is an active part of the program that is being executed
+    • It's alive
+    • Think of it as baking the cake using the recipe
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                            Process States
+
+During execution process changes it's state.
+    • New: The process is being created
+    • Ready: The process is ready to run
+    • Running: Instructions are being executed
+    • Waiting: The process is waiting for event to occur or resource
+    • Terminated (or Exit): The process has finished execution or has been killed.
+    • Suspended: A process that is not active currently, but can be resumed later. 
+                 It's optional state in some OSes  
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                        Context Switching
+
+What is the Context Switching?
+    Context switching is the process where the CPU stops executing one process or thread and 
+    starts to executing another.
+    To do this operating system must save the context of the current process and load the context
+    of the next process to resume it's execution from where it left off.
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                        Operations on Processes
+
+System must provide mechanisms for:
+    • Process creation
+    • Process termination
+
+
+Process Creation:
+    •   Process creates children processes, which in turn creates other processes, 
+        forming a tree of processes.
+    •   Process identified and managed via process identifier(pid)
+
+
+fork():
+    •   fork() - is the system call is used to create a new process
+    •   This new process is called child process, and the original one is parent process
+    •   Both process(parent and child) will continue to execute independetly from the point fork() was called
+
+
+Process Termination:
+    •   Process executes last statement and then asks from OS 
+        to delete it using exit() system call
+    •   Parent can terminate execution of child processes using abort() system call
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+
+                                            Interprocess Communication (IPC)
+
+•   Interprocess Communication (IPC) refers to the mechanisms that allows processes to communcate with each other
+an share data in an operating system. Since modern Operating Systems run multiple processes concurrently,
+IPC is crucial for enabling these processes to coordinate, synchronize, and share resources.
+
+•   There are two main types of IPC Shared Memory and Message passing.
+
+
+Shared Memory:
+    •   Definition: Multiple processes share a region of memory to communicate directly
+    •   How it works: One process write a data to the shared memory area, and other processes can read from it.
+    •   Pros: Fast communication
+    •   Cons: Synchronization is tricky(race conditions can occur)
+
+
+Message Passing:
+    •   Definition: Processes can communcate with each other by sending and receiving through communication channel/link
+    •   How it works: One process sends a message (data) to another process, 
+        either through direct communication or using a message queue.
+    •   Pros: Synchronization is easier
+    •   Cons: Can be slower than shared memory, as data has to be copied between processes
+
