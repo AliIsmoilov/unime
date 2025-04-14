@@ -1,0 +1,83 @@
+                                            Scripting Languages
+
+What are Scripting Languages?
+    -   A scripting language is a type of programming language that is usually used to 
+        automate tasks, control application, or glue together other programs.
+    -   Unlike traditional compiled languages(like C or Java), scripting languages 
+        are usually interpreted.
+
+
+
+Key Features of Scripting Languages:
+    •   Interpreted: Code is run line by line.
+    •   High-Level: Easier to write and understand(closer to human language)
+    •   Dynamic Typing: You don't have to declare variable types
+    •   Used for automation and rapid development
+
+
+Why We Need Scripting Languages?
+    
+    1. Automate repetitive tasks
+        Example: A system admin might use a shell script back up files daily
+    
+    2. Speed Up development 
+        They let you build tools quickly because they are easy to write and test
+
+    3. Control Other Programs
+        Example: Python can control other programs like Excel, databses, etc. through APIs    
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                            Bash Scripting
+
+What is Bash Scripting?
+
+    •   A Bash script is a text file containing series of of commands written for the Bash shell
+        commonly used for Linux and Unix systems.
+
+    •   These scripts automate tasks that you would normally type in terminal, saving time 
+        and reducing human error.
+    
+    •   Bash script usually starts with #!/bin/bash (called a shebang) 
+        to tell the system to use the Bash interpreter.   
+    
+    •   Contains one or more shell commands
+
+
+What Can a Bash Script Do?
+
+    •   Create, copy, move, or delete files
+
+    •   Install software
+
+    •   Read input from users
+
+    •   Use loops and conditions
+
+    •   Schedule tasks with cron
+
+    •   Handle system-level operations
+
+
+
+Exercise
+
+    •   Create a file named simple_if.sh
+    •   Assign a value to the variable n.
+    •   if the value of $n is less than 10 then the output will be "It is a
+        one digit number", otherwise the output will be "It is a two digit number".
+
+    #!/bin/bash
+    n=10
+    if [ $n -lt 10 ]
+    then
+    echo "It is a one digit number"
+    else
+    echo "It is a two digit number"
+    fi
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
