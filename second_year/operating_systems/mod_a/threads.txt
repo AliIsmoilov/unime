@@ -1,0 +1,39 @@
+                                                Threads
+
+What is the Threads?
+    •   A thread is the smallest unit of execution in a program.
+    •   Most modern application are multithreaded
+    •   Every program has at least one thread(main), and can have more if needed
+    •   In programing we use threads to make our application to do multiple tasks at the same time.
+
+
+
+Benefits of Threads
+    •   Concurrency: Allows tasks to run parallel, improving efficiency and responsiveness
+    •   Efficient resource usage: threads share resources of the process.
+    •   Economy: cheaper than process creation, thread switching lower overhead than context switching.
+    •   Scalability: process can take advantage of multicore architectures
+
+
+
+
+Processes vs Threads
+
+|-------------------------|------------------------------|---------------------------------|
+|      Feature            |        Process               |           Thread                | 
+|-------------------------|------------------------------|---------------------------------|
+|  Resource Ownership     |     Owns it's own memory     |      Shares memory and other    | 
+|                         |         and resource         |   resources with parent process |  
+|-------------------------|------------------------------|---------------------------------|
+|   Lifetime              |     Independet lifetime      |     Dependent on the parent     |         
+|                         |                              |        process lifetime         |         
+|-------------------------|------------------------------|---------------------------------|
+|   Creation              |     more expensive to        |      Less expensive             |         
+|                         |         create               |         to create               | 
+|-------------------------|------------------------------|---------------------------------|
+|  Context Switching      |         Expensive            |        Less expensive           | 
+|                         |                              |                                 | 
+|-------------------------|------------------------------|---------------------------------|
+|  Fault Tollerance       |   A crash doesn't affect     |      A crash affects other      |
+|                         |     othe processes           |          processes              | 
+|-------------------------|------------------------------|---------------------------------|
