@@ -1,0 +1,66 @@
+                                                Scheduling
+
+What is CPU scheduler?
+    •   A CPU scheduler is a fundamental component of an operating system responsible
+        for deciding which process gets to use the CPU.
+        Since mist systems has more processes than CPU cores, the scheduler ensures
+        fairness, efficiency and responsiveness by allocating CPU time among processes
+    
+
+What CPU scheduler does?
+    •   Selects the process from the ready queue(processes waiting for CPU time)
+    •   Allocates CPU to one process
+    •   Performs this task repeteadly and quickly
+
+
+Types of CPU Scheduling
+
+    1.  First-Come, First Served(FCFS):
+            • Processes sorted by order they arrive
+            • can lead to the convoy effect (long waiting times)
+    
+    2.  Shortest Job Next (SJN) / Shortest Job First (SJF):
+            • Pick the process with shortest burst time
+            • Can lead to starvation for long jobs
+    
+    3.  Priority Scheduling:
+            • Each process has a priority, CPU goes by priority order
+            • Needs aging to prevent starvation
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+                                        
+                                    Preemptive VS Non-Preemptive scheduling
+
+Preemptive Scheduling
+
+    Definition: 
+        In preemptive scheduling, the operating system can interrupt a currently running process
+        in order to assign the CPU to another process - usually one with higher priority.
+
+    Characteristics:
+        •   The CPU can be taken away from running process
+        •   Allows better responsiveness
+        •   Ensures that hihg-priority tasks don't wait too long
+
+    Real Life Example:
+        Imagine you're watching a movie on your laptop (Process A), and then you get a video call (Process B, higher priority). 
+        The system pauses the movie and gives priority to the call.       
+    
+
+
+Non-preemptive Scheduling
+    Definition:
+        In non-preemptive scheduling, once a process starts execution, it runs until completion or
+        until it blocks itself, and CPU is not taken away by force.
+   
+    Characteristics:
+        •   Simple to implement
+        •   no interruption once a process is running
+        •   Might lead to poor responsiveness for hihg-priority tasks        
+
+     Real Life Example:
+        You start printing a long document (Process A), and even if another urgent task 
+        comes in (Process B), it has to wait until the printing is done.
