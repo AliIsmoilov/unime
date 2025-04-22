@@ -1,0 +1,39 @@
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+                                        
+                                        Real-Time CPU Scheduling
+
+What is a Real-Time Process?
+    •   A real-time process is one where the correctness of the system depends not only
+        on the logical computation but also on the time which results are produced.
+    •   Real-time processes are special because they have a strict timing requirements.
+    •   The OS needs to schedule them in a way that ensures deadlines are met - which is very
+        different than normal processes are handled.
+
+
+Two main Types of Real-Time processes:
+    •   Hard-Real Time: Missing a deadline is catastrophic (e.g pacemakers and medical devices)
+    •   Soft-Real Time: Missing a deadline is tolerable occasionally (e.g video streaming, online gaming)
+
+
+
+How OS Schedules Real-Time processes?
+    •   OS use real-time scheduling algorithms that are desingned to prioritize tasks based on 
+        their timing constraints.
+    •   For real-time scheduling, scheduler must support preemptive, priority based scheduling
+    
+    Key concepts:
+        •   Deadline: The time which task must be completed.
+        •   Period: How often task repeats
+        •   Execution Time: Time it takes for a task to finish once started.
+        •   Priority: Determines which task gets the CPU first.
+
+
+Real-Time scheduling algorithms:
+
+    1.Earliest Deadline First (EDF)
+        • Task with the closest deadline runs first.
+    
+    2. Rate Monotonic Scheduling (RMS)
+        • Shorter period → higher priority.
+        • Simple and efficient for periodic tasks.    
