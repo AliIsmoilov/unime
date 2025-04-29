@@ -42,3 +42,20 @@
     A and B both write 6.
     
     Now you've lost an increment - same idea with variables in code.
+
+
+Why It's a Problem:
+    Race conditions can cause unpredictable behavior, data corruption, 
+    or crashes and they can be very hard to debug because they might not happen every time(depending on timing).
+
+
+How to Prevent:
+    
+    There are already several common solutions to avoid race conditions:
+
+        •   Locks/Mutexes: Ensure only one thread accesses the shared resource at a time.
+        •   Atomic operations: Use atomic instructions for simple changes.
+        •   Thread-safe data structures or functions.
+
+        P.s For now, it's enough to understand the general idea of these techniques. 
+            We'll explore each of them in more detail in next articles.
