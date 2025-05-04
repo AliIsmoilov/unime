@@ -78,3 +78,50 @@ What is Deadlock Prevention?
             R2 only if it already holds R1.
 
 
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+
+What is Banker's Algorithm?
+    • It is a resource allocation and deadlock avoidance algorithm developed by Edsger Dijkstra
+    • It ensures that a system does not enter a deadlock state by simulating 
+        the allocation of resources to processes and checking if the system remains 
+        in a safe state after the allocation.   
+
+
+Why is it called  "Banker's" Algorithm?
+    Because it reminds how a banker might decide whether to approve a loan:
+        • Banker checks if they can still satisfy the maximum possible future requests 
+            of all customers after giving out a loan.
+        • If not, the loan (resource request) is denied.
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+What is Deadlock Recovery?
+    • Once a deadlock is detected, the system needs to break the cycle 
+        so that processes can continue to works
+    • There are two main approaches: Process termination, Resource preemption
+
+
+1. Process Termination
+    • Kill one or more processes involved in the deadlock.
+    • Two options:
+        • Abort all deadlocked processes: quick but causes data loss.
+        • Abort one at a time until the deadlock breaks.
+
+    • Which process to kill?
+        • Based on priority
+        • Process completion time
+        • How many other processes it would free
+
+2. Resource Preemption
+    • Temporarily take resources away from one or more processes.
+    • The preempted process is either:
+        • Rolled back to a safe state and restarted later
+        • Or paused until resources are available again
+
+    • Considerations:
+        • Which resources to take?
+        • From which process?
