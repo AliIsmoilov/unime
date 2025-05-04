@@ -1,0 +1,80 @@
+
+
+What is Deadlock?
+    A deadlock is a situation in computing where two or more processes are unable to proceed 
+    because each is waiting for the other to release a resource. 
+    In simpler terms, it's like a standoff where no one can move forward 
+    because everyone is holding something the others need.
+
+Real life example(ChatGPT):
+    Imagine two people trying to eat spaghetti, but each needs two forks. 
+    Person A has fork 1, and Person B has fork 2. 
+    Neither can eat until they have both forks, but neither is willing to give up the fork they already have.
+    So they both just sit there — stuck. That's a deadlock.
+
+
+Deadlock Characterization
+    Deadlock can arise if four conditions hold simultaneously:
+        • Mutual exclusion: only one thread at a time can use a resource
+        • Hold and wait: a thread holding at least one resource is waiting to
+          acquire additional resources held by other threads
+        • No preemption: Resources can not be forcibly taken away from process
+        • Circular wait: A closed chain of processes exists where each process holds a resource 
+          and waits for another held by the next.
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+Deadlock Detection
+    •   Deadlock detection is a method used in operating systems to identify when a deadlock 
+        has occurred among processes and resources. Instead of preventing or avoiding deadlocks, 
+        this strategy lets them happen, and then the system checks for them and takes steps to recover.
+    •   There are several techniques to detect deadlocks like: Resource Allocation Graph (RAG)
+
+
+What Is a Resource-Allocation Graph (RAG)?
+    •   A Resource-Allocation Graph is a visual representation of the relationships 
+        between processes and resources in a system.
+    •   It is technique to detect deadlocks by showing which process are holding
+        or waiting for which resources.
+    •   You can see the example of RAG here: 
+        https://forns.lmu.build/assets/images/spring-2018/cmsi-387/week-12/rag-safe.png
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+What is Deadlock Prevention?
+    •   Deadlock Prevention is a technique that ensures at least one of the four 
+        necessary conditions for a deadlock can never occur. 
+    •   By eliminating one or more of these conditions, the system prevents deadlocks from ever happening.
+    •   Above we talked about four necessary conditions for a deadlock.
+
+
+    1. Prevent Mutual Exclusion
+        • Idea: Allow resources to be shared.
+        • Reality: Only works for sharable resources like read-only files. 
+            Not possible for non-sharable resources (e.g., printers).
+        • Example: Two processes reading from the same file.
+    
+    2. Prevent Hold and Wait
+        • Idea: Require a process to request all resources at once before execution starts.
+        • Pros: Eliminates waiting while holding.
+        • Cons: May lead to low resource utilization and starvation.
+        • Example: Process A requests both printer and scanner at the beginning. 
+            If both are not available, it waits without holding anything.
+    
+    3. Prevent No Preemption
+        • Idea: If a process is holding some resources and requests another not available, 
+            take back the currently held resources.
+        • Used in: Systems where resources can be saved/restored safely (e.g., CPU, memory).
+        • Example: In CPU scheduling, if a process needs more memory than available, 
+            take away its CPU time and put it back in the queue.
+
+    4. Prevent Circular Wait
+        • Idea: Put a strict ordering on resources. Each process must request resources in that order.
+        • Example: Number all resources (R1, R2, R3...), and require that a process can request 
+            R2 only if it already holds R1.
+
+
