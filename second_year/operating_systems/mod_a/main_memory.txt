@@ -1,0 +1,107 @@
+Main Memory
+    • Main memory (sometimes called primary storage) refers to storage locations that are
+        directly accessible by the processor.
+    • It is also called RAM (Random Access Memory).
+    • Main memory and registers are only CPU can access directly
+
+Address Binding
+   •Address Binding is the process of mapping logical (or virtual) 
+        addresses used by a program to physical addresses in main memory. 
+
+
+Types of Address Binding
+
+----------------|------------------------------|-------------------------------------------------------------|
+Type           	| When It Happens          	   |                       Description                           |
+----------------|------------------------------|-------------------------------------------------------------|
+Compile-time    | During program compilation   | If the memory location is known, absolute addresses         |   
+                |                              |         are generated. No flexibility.                      |       
+----------------|------------------------------|-------------------------------------------------------------|
+Load-time       | When the program is loaded   |   OS determines the memory location                         |
+                |                              |      and adjusts addresses.                                 |   
+----------------|------------------------------|-------------------------------------------------------------|
+Execution-time  | While the program is running |  Most flexible. Uses hardware (MMU) to map logical          |
+                |                              |    to physical addresses dynamically.                       |   
+----------------|------------------------------|-------------------------------------------------------------|
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+What is Loader?
+    • Loader is the module of the operating system responsible for loading
+        the program from secondary memory to main memory and executing them
+    • Example: 
+        When you double-click a game or open a code editor, the loader is the OS component 
+            that moves the program into RAM and prepares it for the CPU to run.
+    • There are mainly two types of loader: Static Loader and Dynamic Loader
+
+
+Static Loader:
+    • It loads the entire executable program including, libraries and dependencies required by the
+        program into the memory before the program gets executed.
+    
+    • Advantages:
+        • Easy and simple to implement.
+        • As the entire program is loaded into the memory once, 
+            this makes the static loaded very much faster.
+        • Static loaded is reliable because it resolves all the external references 
+            before the execution of the program.
+
+    • Disadvantages:
+        • Waste of memory because it loads all the data and code into memory before execution.
+        • Not efficient as the data or code that it loads, it may or may not be used after
+
+
+Dynamic Loading:
+    • The entire program does need to be in memory to execute
+    • All routines kept on disk in relocatable load format
+    • Routine is not loaded until it is called
+
+    • Advantages:
+        • Better memory-space utilization; unused routine is never loaded
+        • Useful when large amounts of code are needed to handle infrequently occurring cases
+
+    • Disadvantages:
+        • more complex and it is difficult to implement.
+        • Overhead as it resolves all the external dependencies at run time.
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+• In Operating Systems, memory allocation strategies are used to manage how memory 
+    is assigned to processes. 
+• Two major strategies are Contiguous and Non-Contiguous Memory Allocation:
+
+
+1. Contiguous Memory Allocation
+    • In this method, each process is allocated a single contiguous block of memory. 
+    • All the memory assigned to the process is in one continuous segment.
+
+    Characteristics:
+        • Simple to implement and manage.
+        • Faster access due to locality of reference.
+        • Easier address translation.
+
+    Disadvantages:
+        • External Fragmentation: Over time, free memory gets split into small blocks, 
+            making it hard to allocate large continuous blocks.
+        • Fixed-size partitioning may waste space if the process doesn't use the full partition
+        • Limits flexibility—process size must be less than available contiguous memory.
+
+
+2. Non-Contiguous Memory Allocation
+    • Here, a process is allocated memory in different locations (not necessarily adjacent). 
+    • The process is divided into segments or pages, and each can be placed in different areas of memory.
+
+
+    Characteristics:
+        • Eliminates external fragmentation.
+        • More efficient use of memory.
+        • Processes can grow easily (e.g., stack or heap expansion).
+
+    Disadvantages:
+        • More complex address translation (needs page tables or segment tables).
+        • Overhead of maintaining memory management data structures.
+        • May have internal fragmentation (with paging).
