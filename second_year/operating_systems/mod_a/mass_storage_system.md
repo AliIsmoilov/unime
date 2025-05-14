@@ -243,7 +243,7 @@ Storage attachment is an essential part of any computer or server setup. Whether
 ------------------------------------------------------------------------------------------------------
 
 
-# 💾 RAID Structure – Easy Explanation
+# 💾 RAID Structure
 
 ## 🔹 What is RAID?
 
