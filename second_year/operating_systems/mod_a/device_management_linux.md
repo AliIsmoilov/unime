@@ -3,7 +3,6 @@
 applications down to the physical hardware.
 
 
-|----------------------|----------------------------------------------------------------------------------------|
 | Layer                | Description                                                                            |
 |----------------------|----------------------------------------------------------------------------------------|
 | **User interface**   | User programs and utilities that interact with the system (e.g., Firefox, LibreOffice) |
@@ -12,7 +11,7 @@ applications down to the physical hardware.
 | **System Libraries** | Standard functions and routines used by applications (e.g., libc, OpenSSL)             |
 | **Kernel**           | Core of the operating system: manages hardware, processes, memory, etc.                |
 | **Hardware**         | Physical components (CPU, RAM, disk, peripherals)                                      |
-|----------------------|----------------------------------------------------------------------------------------|
+
 
 
 ## 📌 Visual Reference
