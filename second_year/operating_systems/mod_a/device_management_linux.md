@@ -107,10 +107,8 @@ In Linux, hardware devices are grouped into different **classes** based on how t
 
 ## Summary
 
-|------------------|------------------------|-------------------------------|
 | Device Class     | Data Transfer Type     | Example Devices               |
 |------------------|------------------------|-------------------------------|
 | Character Device | Byte-by-byte           | Keyboard, Mouse, Serial Ports |
 | Block Device     | Block-based            | Hard Disk, USB Drive          |
 | Network Device   | Packets (via network)  | Ethernet, Wi-Fi               |
-|------------------|------------------------|-------------------------------|
