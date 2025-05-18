@@ -54,7 +54,7 @@ This consistency simplifies system programming and shell scripting because devel
 
 ---
 
-## Classes of Devices and Modules in Linux
+## 🔹 Classes of Devices and Modules in Linux
 
 In Linux, hardware devices are grouped into different **classes** based on how they handle data. Each class has specific characteristics and is managed by a specific type of driver module in the kernel.
 
@@ -112,3 +112,64 @@ In Linux, hardware devices are grouped into different **classes** based on how t
 | Character Device | Byte-by-byte           | Keyboard, Mouse, Serial Ports |
 | Block Device     | Block-based            | Hard Disk, USB Drive          |
 | Network Device   | Packets (via network)  | Ethernet, Wi-Fi               |
+
+
+---
+
+## 🔹 Linux File Types
+
+Linux file system uses different file types to manage various kinds of data and operations. 
+Each file type serves a specific purpose.
+
+---
+
+
+## Summary of File Types
+
+| File Type                | Symbol | Description                                                                 |
+|------------------------- |--------|-----------------------------------------------------------------------------|
+| **Regular File**         | `-`    | Standard files that store user or application data. Can be text binary..    |
+| **Directory**            | `d`    | Contains entries that are references to other files and directories         |
+| **Character File**       | `c`    | Represents devices that handle data one character at a time                 |
+| **Block Special File**   | `b`    | Represents devices that handle data in blocks ( hard drives, flash drives). |
+| **FIFO (Named Pipe)**    | `p`    | Allows data to flow in one direction between processes.                     |
+| **Symbolic Link**        | `l`    | A shortcut or reference to another file or directory. Works like a pointer. |
+| **Socket**               | `s`    | Used for communication between processes, often over a network.             |
+
+---
+
+- Each file type plays a key role in how Linux interacts with data, hardware, and processes. 
+- You can identify the file type by the first character in the output of `ls -l`. 
+
+
+## 🔹 What are Linux Device Drivers (Modules)?
+- A **Device Driver** is a type of kernel module that allows the OS to interact with hardware devices.
+- Translates general kernel instructions into hardware-specific operations.
+
+---
+
+### Types of Device Drivers
+- **Character drivers** - e.g., keyboard, serial ports.
+- **Block drivers** - e.g., hard drives.
+- **Network drivers** - e.g., Ethernet cards.
+
+---
+
+## Useful Commands
+- `lsmod` - List loaded modules.
+- `modprobe <module>` - Load a module automatically with dependencies.
+- `insmod <module.ko>` - Manually insert a module.
+- `rmmod <module>` - Remove a module.
+- `dmesg` - View kernel logs (helpful for debugging modules).
+
+
+## 🔹 What is a Loadable Kernel Module (LKM)?
+- A **Loadable Kernel Module** is a piece of code that can be added to or removed from the 
+  Linux kernel at runtime.
+- Used to extend kernel functionality without rebooting.
+- Examples: device drivers, file systems, or system calls.
+
+### Benefits
+- No need to recompile the kernel.
+- Enables dynamic hardware support.
+- Keeps the kernel lightweight and flexible.
