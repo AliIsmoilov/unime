@@ -35,7 +35,7 @@ In an embedded system, one CPU controls the screen, while another monitors senso
 
 ---
 
-## 🔄 SMP vs AMP – Quick Comparison
+## 🔄 SMP vs AMP
 
 | Feature             | SMP (Symmetric)                  | AMP (Asymmetric)                    |
 |---------------------|----------------------------------|-------------------------------------|
