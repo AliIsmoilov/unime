@@ -1,0 +1,65 @@
+                                            Starvation
+
+
+What is Starvation?
+   Starvation in operating systems refers to a situation where a process or a thread is unable to 
+   make progress or execute its task due to a lack of essential resources, 
+   such as CPU time, memory, or I/O operations. It occurs when other processes or threads 
+   with higher priority continuously occupy or monopolize the necessary resources, 
+   preventing the starved process from getting its fair share of resources.
+
+
+Starvation Leads to?
+    Starvation can lead to significant performance issues and impact the overall system's
+    responsiveness and efficiency.
+    When a process is starved, it remains in waiting state indefinitely, 
+    enable to complete its task.
+
+
+Causes of Starvation in OS?
+    Priority Inversion:
+        Priority Inversion occurs when a low-priority task is holding a resource
+        that a high-priority task needs. As a result high-priority task can not
+        proceed until low-priority releases that resources.
+        This situation can lead to high-priority task being starved for ectended
+        period, impacting it's Starvation
+
+    Priority-Based Scheduling:
+        Priority-based scheduling algorithms can also cause to starvation in OS.
+        If  there are process with very low priorities and continuously arriving
+        high-priority tasks, lower-priority tasks may be starved.
+    
+    Resource Mismanagement: 
+        Inefficient resource management can lead to starvation.
+
+    Overload:
+        When a system is overloaded with too many tasks or processes, 
+        the operating system will struggle to allocate sufficient resources to
+        all processes which can lead to starvation of some processes.
+
+    Insufficient Resource Quotas: 
+        In some multi-user systems, resource quotas may be set for different users or processes. 
+        If a user or group exceeds their allocated quotas, their processes may be starved of the required resources.
+
+
+Scheduling Algorithms to Prevent Starvation in OS
+    
+    Round Robin Scheduling:
+        This way, every process gets a fair share of CPU time, reducing the risk of starvation
+    
+    Priority-Based Scheduling with Aging:
+        In this algorithm, to avoid starvation of low-priority processes, priority aging is used.
+        In priority aging, the priority of waiting processes gradually increases over time, ensuring
+        that a low-priority task eventually get a chance to be executed.
+    
+    Lottery Scheduling:
+        Lottery scheduling assigns certain number of lottery ticket to each process.
+        The CPU scheduling then randomly selects a ticket from the pool and allocates
+        resources to execute the assigned process.
+        Processes with more tickets have a higher chance of being selected, 
+        but every process has at least one ticket, preventing starvation.
+
+
+Why is preventing starvation important?
+    Preventing starvation is important for maintaining system stability, responsiveness
+    and optimal responsiveness.

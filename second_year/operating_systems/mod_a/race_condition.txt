@@ -1,0 +1,61 @@
+
+
+🏁 What is a Race Condition?
+
+    •   Race Condition its' one of the most common and tricky bugs in concurrent programming
+    •   A Race Condition occurs when two or more threads/processes access shared data at the
+        same time, and the final outcome depends on the order in which they execute
+    •   Order of the processes/threads are unpreadictable or unordered, that's why
+        the behavior of the program becomes inconsistent and often incorrect.
+
+
+⚠️ Why is it called a "race"? 
+    •   Think of two threads as racing to access or modify the same data.
+        Whoever gets there first "wins", and that changes the result.
+    •   But since the CPU might schedule threads differently every time, 
+        the result of the "race" can change each time.
+
+
+
+📉 Example of a Race Condition
+    
+    simple C code:
+    
+    int counter = 0;
+
+    void increment() {
+        counter = counter + 1;
+    }
+
+    If two threads run this at the same time, they might both read the same value, say 5, and then both write 6.
+    So even though the counter was incremented twice, the value only increased by 1.
+    This is a race condition.
+
+
+
+🧠 Real-Life Analogy:
+
+    Imagine two people updating a whiteboard:
+
+    Person A sees the number 5 and wants to add 1.
+    Person B also sees 5 and wants to add 1.
+    A and B both write 6.
+    
+    Now you've lost an increment - same idea with variables in code.
+
+
+Why It's a Problem:
+    Race conditions can cause unpredictable behavior, data corruption, 
+    or crashes and they can be very hard to debug because they might not happen every time(depending on timing).
+
+
+How to Prevent:
+    
+    There are already several common solutions to avoid race conditions:
+
+        •   Locks/Mutexes: Ensure only one thread accesses the shared resource at a time.
+        •   Atomic operations: Use atomic instructions for simple changes.
+        •   Thread-safe data structures or functions.
+
+        P.s For now, it's enough to understand the general idea of these techniques. 
+            We'll explore each of them in more detail in next articles.
