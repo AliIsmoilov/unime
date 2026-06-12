@@ -1,0 +1,38 @@
+1. Dimensionality Reduction
+
+Dimensionality Reduction is the process of reducing the number of features (dimensions) in a dataset while preserving important information. 
+It helps simplify data, reduce storage requirements, improve visualization, and increase model performance.
+
+Advantages:
+
+Reduces computational cost.
+Removes redundant features.
+Helps avoid overfitting.
+Makes data easier to visualize and analyze.
+
+Example: Converting a dataset with 100 features into 10 important features.
+
+-----------------------------
+-----------------------------
+
+2. Data Transformation
+
+Data Transformation is the process of converting data from one format, structure, 
+or representation into another to improve data quality and suitability for analysis.
+
+Purpose:
+
+Normalize or scale data.
+Reduce noise.
+Improve mining and machine learning results.
+Convert data into a suitable form for processing.
+
+Common Techniques:
+
+Normalization
+Standardization
+Aggregation
+Smoothing
+Encoding
+
+Example: Scaling student marks from a range of 0–100 to 0–1.

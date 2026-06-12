@@ -101,7 +101,7 @@ Used today mainly for learning concepts.
 
 ---
 
-### Chaining (Why It’s Needed)
+### Chaining (Why It's Needed)
 Problem:
 - Identical plaintext blocks → identical ciphertext blocks
 

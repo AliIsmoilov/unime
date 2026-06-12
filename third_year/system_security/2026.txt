@@ -1,0 +1,48 @@
+- University
+    - Close all exams in 2026
+        - Calculus 1 (6 CFU)
+        - Mathematics For Data Analysis (6 CFU)
+        - Device For AI (12 CFU)
+            - Mod A
+            - Mod B
+        - Artificial Intelligence (12 CFU)
+            - Machine Learning
+            - Data Mining
+         - Operating Systems (12 CFU)
+            - Mod A
+            - Mod B
+        - Data Modelling (6 CFU)
+        - Russian (12 CFU)
+        - Software Engineering (6 CFU)
+        - Sustainability (6 CFU)
+        - System Security (6)
+        - Web Programming (9 CFU)
+
+        Total CFU = 93
+
+-----------------------------------------------
+-----------------------------------------------
+
+
+- Professional Growth
+    - Get a promotion in Hamkor
+    - Constant Interviews
+    - Dive to infrastructure (Devops)
+
+- Mental Growth
+    - Reading Books
+    - Learning
+    - 
+
+
+- Health Growth
+    - Sport
+    - Measurements and Analysis
+
+
+
+- Financial Growth 
+    - Salary raise 
+    - Passive income
+    - Revenue and Saving
+    - Startups and Investments

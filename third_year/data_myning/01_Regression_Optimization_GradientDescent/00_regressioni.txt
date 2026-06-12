@@ -1,0 +1,41 @@
+Regression
+
+Regression is a supervised learning technique used to predict a continuous numerical value based 
+on one or more input variables. 
+It finds the relationship between dependent and independent variables and is widely used for forecasting, 
+trend analysis, and prediction.
+
+Examples: predicting house prices, sales, temperature, or stock values.
+
+
+-------------------
+
+
+Linear Regression
+
+Linear Regression is a regression technique that models the relationship between variables using a straight line. 
+It assumes that the dependent variable changes linearly with the independent variable(s).
+
+Characteristics:
+
+Simple and easy to interpret.
+Used when data shows a linear relationship.
+Helps predict continuous values.
+
+Example: Predicting house price based on house size.
+
+
+-------------
+
+
+Polynomial Regression
+
+Polynomial Regression is an extension of linear regression that uses polynomial terms to model non-linear relationships between variables. Instead of a straight line, it fits a curved line to the data.
+
+Characteristics:
+
+Captures complex and non-linear patterns.
+More flexible than linear regression.
+Can provide better accuracy when data is curved.
+
+Example: Predicting population growth or sales trends that do not follow a straight-line pattern.
