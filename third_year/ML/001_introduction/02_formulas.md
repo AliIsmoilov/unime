@@ -95,6 +95,47 @@ Z = -2
 
 ---
 
+---
+
+## 3. Normalization
+
+Rescales values into the range [0,1].
+
+Formula:
+
+x' = (x - Min) / (Max - Min)
+
+Where:
+
+* x = original value
+* Min = minimum feature value
+* Max = maximum feature value
+
+Example:
+
+x = 30
+
+Min = 10
+
+Max = 50
+
+x' = (30 - 10) / (50 - 10)
+
+x' = 20 / 40
+
+x' = 0.50
+
+Useful For:
+
+* Distance-based algorithms such as kNN
+* Features with different scales
+
+Easy Exam Memory:
+
+Normalization → Rescale to [0,1]
+
+---
+
 ## 4. Gini Impurity
 
 Used in Decision Trees.
